@@ -42,8 +42,10 @@ import { ReactComponent as CategoryIcon } from "./category.svg";
 import { ReactComponent as Finance } from "./finance.svg";
 import { ReactComponent as RightArrow } from "./right-arrow.svg";
 import { ReactComponent as KeyPerson } from "./key-person.svg";
+import { ReactComponent as Wallet } from "./wallet.svg";
 
 export {
+  Wallet,
   KeyPerson,
   RightArrow,
   Finance,

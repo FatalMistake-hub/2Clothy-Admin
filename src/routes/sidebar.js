@@ -37,9 +37,9 @@ const routes = [
         // ],
     },
     {
-        path: '/finance',
-        icon: 'Finance',
+        icon: 'Wallet',
         name: 'Tài chính',
+        path: '/finance',
     },
     {
         path: '/static',

@@ -77,7 +77,7 @@ function Login() {
                     value={Login.values.email}
                     onChange={Login.handleChange}
                     className="mt-1"
-                    type="email"
+                    type="text"
                     placeholder="Enter your email"
                   />
                   {Login.errors.email && (
