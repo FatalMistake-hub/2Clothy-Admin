@@ -1,0 +1,2 @@
+(this["webpackJsonp2Clothy-Admin"]=this["webpackJsonp2Clothy-Admin"]||[]).push([[28],{1018:function(t,e,n){"use strict";n.r(e);var a=n(0),r=n.n(a),l=n(63);e.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement(l.a,null,"Blank"))}},63:function(t,e,n){"use strict";var a=n(0),r=n.n(a);e.a=function(t){var e=t.children;return r.a.createElement("h1",{className:"my-4 text-2xl font-semibold text-gray-700 dark:text-gray-200"},e)}}}]);
+//# sourceMappingURL=28.2248f17e.chunk.js.map
