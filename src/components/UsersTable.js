@@ -83,7 +83,7 @@ const UsersTable = ({ resultsPerPage, filter }) => {
                         </tr>
                     </TableHeader>
                     <TableBody>
-                        {data.map((user, i) => (
+                        {data?.map((user, i) => (
                             <TableRow key={i}>
                                 <TableCell>
                                     <div className="flex items-center text-sm">
@@ -116,7 +116,7 @@ const UsersTable = ({ resultsPerPage, filter }) => {
                                             <Select className="mt-1" onChange={(e) => handleSelected(e.target.value, user.id)}>
                                                 {userGroups
                                                     // .filter((item) => item.description != user.userGroupName)
-                                                    .map((group, i) => (
+                                                    ?.map((group, i) => (
                                                         <option
                                                             key={i}
                                                             value={group.id}

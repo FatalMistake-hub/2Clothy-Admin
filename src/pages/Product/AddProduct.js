@@ -54,8 +54,8 @@ const AddProduct = () => {
         if (images.length < 1) return;
         const newImageUrls = [];
 
-        AddProductForm.values.Paths=images
-        console.log(AddProductForm.values.Paths)
+        AddProductForm.values.Paths = images;
+        console.log(AddProductForm.values.Paths);
 
         images.forEach((image) => newImageUrls.push(URL.createObjectURL(image)));
         setImageURLs(newImageUrls);
@@ -124,7 +124,7 @@ const AddProduct = () => {
                 // Quantity: null,
                 Paths: images,
             };
-            console.log("submit",newProduct);
+            console.log('submit', newProduct);
             // const fetchApi = async () => {
             //     // const res = await loginUser(newUser, dispatch, navigate);
             //     const res = 1;
@@ -165,7 +165,7 @@ const AddProduct = () => {
                                 <div className="relative overflow-hidden  rounded">
                                     <div className="py-3 relative w-96 flex bg-white">
                                         <ul className=" h-80 flex-1">
-                                            {categoriesResult.map((result, i) => (
+                                            {categoriesResult?.map((result, i) => (
                                                 <li
                                                     key={result.id}
                                                     className="my-2 flex justify-between leading-8 items-center px-4 hover:bg-gray-100"
@@ -219,7 +219,7 @@ const AddProduct = () => {
                         <CardBody>
                             <FormTitle>Hình ảnh sản phẩm</FormTitle>
                             <div className="w-full flex flex-wrap">
-                                {imageURLS.map((imageSrc, i) => (
+                                {imageURLS?.map((imageSrc, i) => (
                                     <div key={i} className="w-20 h-20 rounded mr-4 mb-4">
                                         <div className="w-full h-full ">
                                             <img src={imageSrc} alt="not fount" className="w-20 h-20 rounded border " />

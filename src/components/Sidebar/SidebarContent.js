@@ -14,23 +14,15 @@ function Icon({ icon, ...props }) {
 function SidebarContent() {
     return (
         <div className="  text-gray-500 dark:text-gray-400">
-      <div className="flex py-2  items-center w-full text-gray ">
-        <img
-                aria-hidden="true"
-                className="object-contain w-16 h-16 ml-4 dark:hidden rounded-lg"
-                src={Clothy}
-                alt="Office"
-              />
-        <a
-          className="ml-4 text-2xl font-semibold text-gray-800 dark:text-gray-200"
-          href="#"
-        >
-          Admin
-        </a>
-      </div>
+            <div className="flex py-2  items-center w-full text-gray ">
+                <img aria-hidden="true" className="object-contain w-16 h-16 ml-4 dark:hidden rounded-lg" src={Clothy} alt="Office" />
+                <a className="ml-4 text-2xl font-semibold text-gray-800 dark:text-gray-200" href="#">
+                    Admin
+                </a>
+            </div>
             <ul className="mt-6">
-                {/* {routes.slice(0, -3).map((route) => */}
-                {routes.map((route) =>
+                {/* {routes.slice(0, -3)?.map((route) => */}
+                {routes?.map((route) =>
                     route.routes ? (
                         <SidebarSubmenu route={route} key={route.name} />
                     ) : (
@@ -56,7 +48,7 @@ function SidebarContent() {
 
                 {/* <hr className="customeDivider mx-4 my-5" /> */}
 
-                {/* {routes.slice(-3).map((route) => (
+                {/* {routes.slice(-3)?.map((route) => (
           <li className="relative px-6 py-2 my-5" key={route.name}>
             <NavLink
               exact

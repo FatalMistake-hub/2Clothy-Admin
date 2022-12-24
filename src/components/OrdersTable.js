@@ -65,7 +65,7 @@ const OrdersTable = ({ resultsPerPage, filter, path }) => {
                         </tr>
                     </TableHeader>
                     <TableBody>
-                        {data.map((order, i) => (
+                        {data?.map((order, i) => (
                             <TableRow key={i}>
                                 <TableCell>
                                     <div className="flex items-center text-sm">
@@ -101,10 +101,21 @@ const OrdersTable = ({ resultsPerPage, filter, path }) => {
                                 </TableCell>
                                 <TableCell>
                                     <div className="flex flex-col  justify-between">
-                                        <Link to={`/ordersDetail`} ><span  className="my-2 font-medium leading-3 text-blue-500 hover:text-blue-700" aria-label="Preview">Xem chi tiết</span></Link>
-                                        <span  className="my-2 font-medium leading-3 text-blue-500 hover:text-blue-700" aria-label="Preview">Xác nhận</span>
+                                        <Link to={`/ordersDetail`}>
+                                            <span
+                                                className="my-2 font-medium leading-3 text-blue-500 hover:text-blue-700"
+                                                aria-label="Preview"
+                                            >
+                                                Xem chi tiết
+                                            </span>
+                                        </Link>
+                                        <span className="my-2 font-medium leading-3 text-blue-500 hover:text-blue-700" aria-label="Preview">
+                                            Xác nhận
+                                        </span>
 
-                                        <span  className="my-2 font-medium leading-3 text-blue-500 hover:text-blue-700" aria-label="Preview">Huỷ</span>
+                                        <span className="my-2 font-medium leading-3 text-blue-500 hover:text-blue-700" aria-label="Preview">
+                                            Huỷ
+                                        </span>
 
                                         {/* <span icon={EyeIcon} className="my-2" aria-label="Preview">Đang giao</span> */}
                                     </div>

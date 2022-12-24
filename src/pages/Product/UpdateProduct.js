@@ -193,7 +193,7 @@ const UpdateProduct = () => {
                                 <div className="relative overflow-hidden  rounded">
                                     <div className="py-3 relative w-96 flex bg-white">
                                         <ul className=" h-80 flex-1">
-                                            {categoriesResult.map((result, i) => (
+                                            {categoriesResult?.map((result, i) => (
                                                 <li
                                                     key={result.id}
                                                     className="my-2 flex justify-between leading-8 items-center px-4 hover:bg-gray-100"
@@ -247,7 +247,7 @@ const UpdateProduct = () => {
                         <CardBody>
                             <FormTitle>Hình ảnh sản phẩm</FormTitle>
                             <div className="w-full flex flex-wrap">
-                                {imageURLS.map((imageSrc, i) => (
+                                {imageURLS?.map((imageSrc, i) => (
                                     <div key={i} className="w-20 h-20 rounded mr-4 mb-4">
                                         <div className="w-full h-full ">
                                             <img src={imageSrc.path} alt="not fount" className="w-20 h-20 rounded border " />

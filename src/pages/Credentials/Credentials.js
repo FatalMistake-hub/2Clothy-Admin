@@ -51,10 +51,10 @@ const Credentials = () => {
         fetchApi();
     }, []);
     const handleChecked = (roleId, type) => {
-        const updatedAdminState = response.admin.map((item, index) =>
+        const updatedAdminState = response.admin?.map((item, index) =>
             item.roleId === roleId && type == 1 ? { roleId: roleId, roleName: item.roleName, isActivated: !item.isActivated } : item,
         );
-        const updatedShopState = response.shop.map((item, index) =>
+        const updatedShopState = response.shop?.map((item, index) =>
             item.roleId === roleId && type == 3 ? { roleId: roleId, roleName: item.roleName, isActivated: !item.isActivated } : item,
         );
 
