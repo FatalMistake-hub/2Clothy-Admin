@@ -60,7 +60,7 @@ const UsersTable = ({ resultsPerPage, filter }) => {
 
         let axiosJWT = createInstance(currentUser, dispatch, AuthSlice.actions.loginSuccess);
         const result = await apiAuthService.updateUser(
-            { UserId: parseInt(UserGroupId), UserGroupId: UserId },
+            { UserId: UserId, UserGroupId: parseInt(UserGroupId) },
             currentUser.accessToken,
             axiosJWT,
         );
