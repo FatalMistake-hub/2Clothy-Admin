@@ -159,7 +159,7 @@ const Finance = () => {
                                 <TableHeader>
                                     <tr>
                                         <TableCell>Ngày</TableCell>
-                                        <TableCell>Loại giao dịch | Mô tả</TableCell>
+                                        <TableCell>Shop | Người dùng</TableCell>
                                         <TableCell>Số tiền</TableCell>
                                         <TableCell>Trạng thái</TableCell>
                                     </tr>
@@ -173,9 +173,9 @@ const Finance = () => {
                                                 </TableCell>
                                                 <TableCell>
                                                     <div className="flex items-center text-sm">
-                                                        <div>
-                                                            <p className="font-semibold">{history.shopName}</p>
-                                                        </div>
+                                                        <p className="font-semibold">
+                                                            {history.shopName} | {history.customerName}
+                                                        </p>
                                                     </div>
                                                 </TableCell>
 
