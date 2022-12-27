@@ -91,7 +91,7 @@ const ProductsAll = () => {
                 <div className="flex items-center text-orange-600">
                     <Icon className="w-5 h-5" aria-hidden="true" icon={HomeIcon} />
                     <NavLink exact to="/dashboard" className="mx-2">
-                        Kênh người bán
+                        Admin
                     </NavLink>
                 </div>
                 {'>'}
@@ -140,7 +140,7 @@ const ProductsAll = () => {
                         </div>
                         <div className="">
                             <Button
-                                icon={view === 'list' ? GridViewIcon: ListViewIcon}
+                                icon={view === 'list' ? GridViewIcon : ListViewIcon}
                                 className="p-2"
                                 aria-label="Edit"
                                 onClick={handleChangeView}
@@ -201,7 +201,11 @@ const ProductsAll = () => {
                                     <TableRow key={product.id}>
                                         <TableCell>
                                             <div className="flex items-center text-sm">
-                                                <ProductIcon className="hidden mr-4 md:block" src={product.images[0].path} alt="Product image" />
+                                                <ProductIcon
+                                                    className="hidden mr-4 md:block"
+                                                    src={product.images[0].path}
+                                                    alt="Product image"
+                                                />
                                                 <div>
                                                     <p className="font-semibold ">{product.name}</p>
                                                 </div>

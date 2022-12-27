@@ -6,11 +6,11 @@
  * `routes/index.js`
  */
 const routes = [
-    {
-        path: '/dashboard', // the url
-        icon: 'HomeIcon', // the component being exported from icons/index.js
-        name: 'Trang chủ', // name that appear in Sidebar
-    },
+    // {
+    //     path: '/dashboard', // the url
+    //     icon: 'HomeIcon', // the component being exported from icons/index.js
+    //     name: 'Trang chủ', // name that appear in Sidebar
+    // },
     {
         path: '/manage-profile',
         icon: 'UserIcon',
@@ -41,11 +41,11 @@ const routes = [
         name: 'Tài chính',
         path: '/finance',
     },
-    {
-        path: '/static',
-        icon: 'StatIcon',
-        name: 'Chỉ số',
-    },
+    // {
+    //     path: '/static',
+    //     icon: 'StatIcon',
+    //     name: 'Chỉ số',
+    // },
     {
         path: '/logout',
         icon: 'OutlineLogoutIcon',

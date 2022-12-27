@@ -13,7 +13,8 @@ import {
     TableHeader,
     TableCell,
     TableRow,
-    TableFooter,Badge
+    TableFooter,
+    Badge,
 } from '@windmill/react-ui';
 import OrdersTable from '../../components/OrdersTable';
 import RoundIcon from '../../components/RoundIcon';
@@ -54,7 +55,7 @@ const Orders = () => {
                 <div className="flex items-center text-orange-600">
                     <Icon className="w-5 h-5" aria-hidden="true" icon={HomeIcon} />
                     <NavLink exact to="/dashboard" className="mx-2">
-                        Kênh người bán
+                        Admin
                     </NavLink>
                 </div>
                 {'>'}
@@ -161,16 +162,16 @@ const Orders = () => {
                                             <span className="text-base font-normal leading-6">₫112.000</span>
                                             <span className="text-base font-normal leading-6">₫112.000</span>
                                             <Badge
-                                            className="mt-4 w-24 h-14 flex items-center justify-center p-2"
-                                            // type={
-                                            //     order.status === 'Un-paid'
-                                            //         ? 'danger'
-                                            //         : order.status === 'Paid'
-                                            //         ? 'success'
-                                            //         : order.status === 'Completed'
-                                            //         ? 'warning'
-                                            //         : 'neutral'
-                                            // }
+                                                className="mt-4 w-24 h-14 flex items-center justify-center p-2"
+                                                // type={
+                                                //     order.status === 'Un-paid'
+                                                //         ? 'danger'
+                                                //         : order.status === 'Paid'
+                                                //         ? 'success'
+                                                //         : order.status === 'Completed'
+                                                //         ? 'warning'
+                                                //         : 'neutral'
+                                                // }
                                             >
                                                 Thành công
                                             </Badge>

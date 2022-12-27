@@ -40,7 +40,7 @@ const Orders = () => {
                 <div className="flex items-center text-orange-600">
                     <Icon className="w-5 h-5" aria-hidden="true" icon={HomeIcon} />
                     <NavLink exact to="/dashboard" className="mx-2">
-                        Kênh người bán
+                        Admin
                     </NavLink>
                 </div>
                 {'>'}
@@ -51,9 +51,8 @@ const Orders = () => {
             <Card className="mt-5 mb-5 shadow-md">
                 <CardBody>
                     <div className="flex items-center ">
-
                         <Label className="mx-3 flex items-center ">
-                        <p className="text-sm w-full  text-gray-600 dark:text-gray-400">Lọc đơn hàng</p>
+                            <p className="text-sm w-full  text-gray-600 dark:text-gray-400">Lọc đơn hàng</p>
                             <Select className="py-3" onChange={(e) => handleFilter(e.target.value)}>
                                 <option>Tất cả</option>
                                 <option>Chưa thanh toán</option>
@@ -64,8 +63,8 @@ const Orders = () => {
 
                         <Label className="mx-3 flex items-center">
                             {/* <!-- focus-within sets the color for the icon when input is focused --> */}
-                        <p className="text-sm w-full text-gray-600 dark:text-gray-400">Ngày đặt hàng</p>
-                        <Select className="py-3" onChange={(e) => handleFilter(e.target.value)}>
+                            <p className="text-sm w-full text-gray-600 dark:text-gray-400">Ngày đặt hàng</p>
+                            <Select className="py-3" onChange={(e) => handleFilter(e.target.value)}>
                                 <option>Tất cả</option>
                                 <option>Chưa thanh toán</option>
                                 <option>Đã thanh toán</option>
@@ -78,9 +77,9 @@ const Orders = () => {
                                     onChange={(e) => setResultPerPage(e.target.value)}
                                 />
                                 <div className="absolute inset-y-0 right-0 flex items-center mr-3 pointer-events-none"> */}
-                                    {/* <SearchIcon className="w-5 h-5" aria-hidden="true" /> */}
-                                    {/* Results on Table */}
-                                {/* </div>
+                            {/* <SearchIcon className="w-5 h-5" aria-hidden="true" /> */}
+                            {/* Results on Table */}
+                            {/* </div>
                             </div> */}
                         </Label>
                     </div>
